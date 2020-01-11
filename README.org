@@ -1,0 +1,30 @@
+# wl2cli
+
+A cli tool written in Go for controlling WiFi 370 LED Strip Controllers.  This is compatible with LED Strips that can be controlled by the Magic Home app.
+
+
+#+BEGIN_SRC shell :eval no
+$ ./wl2cli 
+Usage: ./wl2cli <red-value> <green-value> <blue-value>
+
+$ ./wl2cli 255   0     0   # red
+$ ./wl2cli 0     255   0   # green
+$ ./wl2cli 0     0     255 # blue
+#+END_SRC
+
+** Getting Started
+
+Ensure you have a working Go environment installed then clone the repo and build
+
+#+BEGIN_SRC shell :eval no
+$ git clone https://github.com/hoanga/wl2cli
+$ go build
+#+END_SRC
+
+** License
+
+[[http://www.apache.org/licenses/LICENSE-2.0][Apache]]
+
+** Resources
+
+*** This work is based on [[https://community.smartthings.com/t/magic-home-wifi-led-control/80221][SmartThings Bridge]]
